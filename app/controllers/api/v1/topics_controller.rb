@@ -4,7 +4,6 @@ class Api::V1::TopicsController < Api::V1::ApiController
   before_action :set_topic, only: [:show, :update, :destroy]
   before_action :require_authorization!, only: [:update, :destroy]
 
-
   # GET /api/v1/topics
  
   def index

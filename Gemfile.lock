@@ -66,6 +66,9 @@ GEM
     erubi (1.8.0)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    has_scope (0.7.2)
+      actionpack (>= 4.1)
+      activesupport (>= 4.1)
     i18n (1.6.0)
       concurrent-ruby (~> 1.0)
     loofah (2.2.3)
@@ -160,6 +163,7 @@ DEPENDENCIES
   byebug
   colorize
   devise
+  has_scope
   pg (>= 0.18, < 2.0)
   pry-byebug
   puma (~> 3.11)
