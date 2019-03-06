@@ -34,6 +34,10 @@ group :development, :test do
 end
 
 group :development do
+  gem 'better_errors'
+  gem 'active_record_query_trace'
+  gem 'colorize'
+  gem 'pry-byebug'
 end
 
 
