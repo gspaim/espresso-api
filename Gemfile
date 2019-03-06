@@ -35,7 +35,6 @@ end
 
 group :development do
   gem 'better_errors'
-  gem 'active_record_query_trace'
   gem 'colorize'
   gem 'pry-byebug'
 end
@@ -45,6 +44,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Gens para a API
+gem 'active_record_query_trace'
 gem 'rack-cors'
 gem 'rack-attack'
 gem 'devise'
