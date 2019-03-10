@@ -25,8 +25,6 @@ class Api::V1::TopicsController < Api::V1::ApiController
  
   def create
     
-    #binding.pry
-
     @topic = Topic.new(topic_params.merge(user: current_user))
 
     if @topic.save

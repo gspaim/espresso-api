@@ -4,13 +4,10 @@ class Api::V1::LoginController < ApplicationController
 
   def create
 
-     
-
     if @user&.valid_password?(params[:user][:password])
-      render json: @user.authentication_token
+      render json: @user
     else
       head(:unauthorized)
-      #render json: @user
     end
 
   end
@@ -19,7 +16,6 @@ class Api::V1::LoginController < ApplicationController
  
   def set_user
 
-    #binding.pry
     @user = User.where(email: params[:user][:email]).take
 
   end
