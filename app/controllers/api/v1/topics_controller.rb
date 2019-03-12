@@ -9,7 +9,7 @@ class Api::V1::TopicsController < Api::V1::ApiController
   def index
 
     @topics = Topic.all
-    render json: @topics
+    render json: @topics.order('created_at DESC')
 
   end
 
