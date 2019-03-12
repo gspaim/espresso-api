@@ -16,6 +16,7 @@ class Api::V1::LoginController < ApplicationController
  
   def set_user
 
+
     @user = User.where(email: params[:user][:email]).take
 
   end

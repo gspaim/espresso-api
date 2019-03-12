@@ -13,7 +13,7 @@ class Api::V1::PostsController < Api::V1::ApiController
   def index
 
     @posts = apply_scopes(Post).all
-    render json: @posts
+    render json: @posts.order('created_at DESC')
   
   end
 
