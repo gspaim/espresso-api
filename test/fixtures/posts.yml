@@ -4,10 +4,10 @@ one:
   message: MyText
   imgUrl: MyText
   user: one
-  topic: one
+  topic: ""
 
 two:
   message: MyText
   imgUrl: MyText
   user: two
-  topic: two
+  topic: ""
